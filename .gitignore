@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore dependencies
+node_modules
+
+# Ignore Next.js build files
+.next
+
+# Ignore environment files (contain API keys/secrets)
+.env.local
+.env.development.local
+.env.production.local
+
+# Ignore system files (MacOS-specific)
+.DS_Store
