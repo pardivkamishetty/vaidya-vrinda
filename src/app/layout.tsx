@@ -41,7 +41,6 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 import { Toaster as SonnerToaster } from '@/components/ui/sonner';
-import { SidebarProvider } from '@/components/ui/sidebar'; // ✅ Import SidebarProvider
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -64,11 +63,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider> {/* ✅ Wrap children inside SidebarProvider */}
-            {children}
-            <Toaster />
-            <SonnerToaster />
-          </SidebarProvider>
+          {children}
+          <Toaster />
+          <SonnerToaster />
         </ThemeProvider>
       </body>
     </html>

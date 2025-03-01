@@ -1,4 +1,4 @@
-import { Sidebar } from "@/components/ui/sidebar";
+import { Sidebar } from "@/components/dashboard/sidebar";
 import { Header } from "@/components/dashboard/header";
 import { Footer } from "@/components/dashboard/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
